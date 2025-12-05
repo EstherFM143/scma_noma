@@ -91,14 +91,14 @@ end
 
 % Plot results
 figure;
-semilogy(SNR, BER(1,:), 'b-', 'DisplayName', 'User 1'); hold on;
-semilogy(SNR, BER(2,:), 'r-', 'DisplayName', 'User 2');
-semilogy(SNR, BER(3,:), 'y-', 'DisplayName', 'User 3');
-semilogy(SNR, BER(4,:), 'm-', 'DisplayName', 'User 4');
-semilogy(SNR, BER(5,:), 'g-', 'DisplayName', 'User 5');
-semilogy(SNR, BER(6,:), 'c-', 'DisplayName', 'User 6');
+semilogy(EbN0, BER(1,:), 'b-', 'DisplayName', 'User 1'); hold on;
+semilogy(EbN0, BER(2,:), 'r-', 'DisplayName', 'User 2');
+semilogy(EbN0, BER(3,:), 'y-', 'DisplayName', 'User 3');
+semilogy(EbN0, BER(4,:), 'm-', 'DisplayName', 'User 4');
+semilogy(EbN0, BER(5,:), 'g-', 'DisplayName', 'User 5');
+semilogy(EbN0, BER(6,:), 'c-', 'DisplayName', 'User 6');
 grid on;
-xlabel('SNR (dB)'); ylabel('BER');
+xlabel('Eb/N0 (dB)'); ylabel('BER');
 legend('show');
-title('BER vs SNR performance for six SCMA users');
+title('BER vs Eb/N0 performance for six SCMA users');
 
